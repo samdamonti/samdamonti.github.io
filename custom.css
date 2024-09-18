@@ -1,0 +1,149 @@
+/* GENERIC */
+
+:root {
+  --color-primary: #025373;
+  --color-secondary: #6ea4cf;
+  --color-dark: #003552;
+  --color-light: #c8dff3;
+  --color-accent: #d23440;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+}
+
+.small-img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  display: block;
+}
+
+.background-img {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+p {
+  max-width: 85ch;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.top-bar {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+body {
+  font-family: "Gill Sans", sans-serif;
+}
+
+a:link {
+  color: var(--color-secondary);
+}
+
+a:visited {
+  color: var(--color-primary);
+}
+
+.button {
+  border-width: 0;
+}
+
+.caption {
+  font-size-adjust: 0.4;
+  margin: 0;
+}
+
+/* ADVENTURES GRID */
+
+.grid {
+  display: grid;
+  gap: 60px;
+  padding: 50px;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px;
+}
+
+.card {
+  background-color: var(--color-light);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 190px;
+  width: 209px;
+  border-radius: 9px;
+  border-width: 0;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+  font-size: 15.69px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px;
+  color: var(--color-dark);
+}
+
+/* LEGO SHELF  */
+.shelf-container {
+  padding: 20px;
+}
+
+.shelf {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
+  height: 200px;
+  border-bottom: 15px solid saddlebrown;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.item {
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: translateY(-10px) rotate(2deg);
+}
